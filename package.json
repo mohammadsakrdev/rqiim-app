@@ -1,0 +1,35 @@
+{
+  "name": "rqiim-app",
+  "version": "1.0.0",
+  "description": "Simple app allowing registration for doctors and patients",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadsakrdev/rqiim-app.git"
+  },
+  "author": "Mohammad Sakr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammadsakrdev/rqiim-app/issues"
+  },
+  "homepage": "https://github.com/mohammadsakrdev/rqiim-app#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
