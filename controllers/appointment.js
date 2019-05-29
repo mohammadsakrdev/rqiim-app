@@ -33,6 +33,7 @@ exports.requestAppointment = (req, res, next) => {
       function(err, appointment) {
         if (err) {
           console.log(err);
+          return res.status(404).json({ message: err, data: null });
         }
         return res
           .status(200)
@@ -56,6 +57,7 @@ exports.rejectAppointment = (req, res, next) => {
       function(err, appointment) {
         if (err) {
           console.log(err);
+          return res.status(404).json({ message: err, data: null });
         }
         return res
           .status(200)
@@ -79,6 +81,7 @@ exports.acceptAppointment = (req, res, next) => {
       function(err, appointment) {
         if (err) {
           console.log(err);
+          return res.status(404).json({ message: err, data: null });
         }
         return res
           .status(200)
@@ -102,6 +105,7 @@ exports.cancelAppointment = (req, res, next) => {
       function(err, appointment) {
         if (err) {
           console.log(err);
+          return res.status(404).json({ message: err, data: null });
         }
         return res
           .status(200)
